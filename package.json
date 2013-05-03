@@ -1,6 +1,7 @@
 {
   "name": "redisc",
-  "author": "jden <jason@denizac.org>",
+  "author": "Agile Diagnosis <hello@agilediagnosis.com>",
+  "contributors": ["jden <jason@denizac.org>"],
   "version": "0.1.0",
   "description": "create redis clients with connection strings",
   "keywords": [
@@ -11,7 +12,7 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
-  "repository": "git@github.com:jden/redisc.git",
+  "repository": "git@github.com:agilemd/redisc.git",
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
