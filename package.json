@@ -3,7 +3,10 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "create redis clients with connection strings",
-  "keywords": ["redis", "connection string"],
+  "keywords": [
+    "redis",
+    "connection string"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
@@ -13,6 +16,12 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "chai": "~1.6.0",
-    "mocha": "~1.9.0"
+    "mocha": "~1.9.0",
+    "sinon-chai": "~2.4.0",
+    "moquire": "~1.5.1",
+    "sinon": "~1.6.0"
+  },
+  "dependencies": {
+    "redis": "~0.8.3"
   }
 }

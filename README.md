@@ -5,8 +5,29 @@ create redis clients with connection strings
 
     var redisc = require('redisc')
 
+    redisc('redis://localhost/0')
+    // => redis client
+
+    redisc('redis://authkey@localhost/1')
+    // => authenticated redis client
+
+
 ## api
 
+### `redisc(connStr: String) => `[RedisClient](https://npmjs.org/package/redis)
+
+Returns an initialized RedisClient, using the npm `[redis](https://npmjs.org/package/redis)` module
+
+### `redisc.parse(connStr: String) => Object`
+
+Returns an object with the various redis connection properties:
+
+    {
+      auth: String?,
+      host: String, // default 'localhost'
+      port: Number, // default 6397
+      db: Number    // default 0
+    }
 
 ## installation
 
@@ -28,4 +49,4 @@ From package root:
 
 ## license
 
-MIT. (c) 2013 jden <jason@denizac.org>. See LICENSE.md
+MIT. (c) 2013 Agile Diagnosis <hello@agilediagnosis.com>. See LICENSE.md
