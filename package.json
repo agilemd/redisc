@@ -2,7 +2,7 @@
   "name": "redisc",
   "author": "Agile Diagnosis <hello@agilediagnosis.com>",
   "contributors": ["jden <jason@denizac.org>"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "create redis clients with connection strings",
   "keywords": [
     "redis",
