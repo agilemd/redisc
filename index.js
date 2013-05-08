@@ -7,8 +7,8 @@ function parse(connStr) {
   return {
     auth: parsed.auth,
     host: parsed.hostname || 'localhost',
-    port: parseInt(parsed.port || 6397, 10),
-    db: parseInt(parsed.pathname.substr(1) || 0, 10)
+    port: parseInt(parsed.port || 6379, 10),
+    db: parseInt(parsed.pathname && parsed.pathname.substr(1) || 0, 10)
   }
 }
 

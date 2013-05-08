@@ -38,5 +38,15 @@ describe('redisc', function () {
         db: 6
       })
     })
+
+    it('defaults the port to the redis default port (6379)', function () {
+      var parsed = redisc.parse('redis://localhost/')
+      parsed.port.should.equal(6379)
+    })
+
+    it('defaults to db 0 if no db is defined', function () {
+      var parsed = redisc.parse('redis://localhost')
+      parsed.db.should.equal(0)
+    })
   })
 })
