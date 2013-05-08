@@ -2,7 +2,7 @@
   "name": "redisc",
   "author": "Agile Diagnosis <hello@agilediagnosis.com>",
   "contributors": ["jden <jason@denizac.org>"],
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "create redis clients with connection strings",
   "keywords": [
     "redis",
@@ -22,7 +22,7 @@
     "moquire": "~1.5.1",
     "sinon": "~1.6.0"
   },
-  "dependencies": {
+  "optionalDependencies": {
     "redis": "~0.8.3"
   }
 }

@@ -1,4 +1,3 @@
-var redis = require('redis')
 var urlParse = require('url').parse
 
 function parse(connStr) {
@@ -12,12 +11,14 @@ function parse(connStr) {
   }
 }
 
-function redisc (connStr) {
+function redisc (connStr, redis) {
+  redis = redis || require('redis')
   var conn = parse(connStr)
-
+  console.log('conning', conn)
 
   var client = redis.createClient(conn.port, conn.host)
   if (conn.auth) {
+    console.log('authing', conn.auth)
     client.auth(conn.auth)
   }
   client.select(conn.db)
